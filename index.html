@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>‘O futuro depende da ciência e da física’</title>
+</head>
+
+<style>
+/* VARIÁVEIS */
+:root {
+--cor1: #FFD3D5;
+--cor1-transparente: #FFD3D5;
+--cor2: #24746B;
+--cor3: #F59385;
+--preto: #000;
+--branco: #FFF;
+--cinza: #666;
+--cinza-claro: #999;
+--azul-nexo: #3ec2cf;
+--sentinel: "Sentinel SSm A", "Sentinel SSm B", "Sentinel SSm", serif;
+--gotham: "Gotham Rnd SSm", "Gotham Rounded SSm A", "Gotham Rounded SSm B", sans-serif;
+}
+/*
+FIX DO SITE
+*/
+._common__container-blank___LSHR2 {
+    padding: 0;
+    margin: 0;
+}
+._common__footer-blank___1HA70 {
+    width: 100%;
+    padding: 0 15%;
+}
+.TopicsNavigation__container___OlLoq {
+}
+.Header__container___19YrK {
+    z-index: 10 !important;
+}
+.FixedFooter__container___2b_U9 {
+    z-index: 10 !important;
+}
+progress {
+    z-index: 12 !important;
+}
+/*
+DESKTOP
+*/	
+html {
+    font-size: 16px;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.semiespecial {
+    margin: 0 auto;
+    min-height: 100vh;
+	overflow-x: hidden;
+}
+p {
+    font-family: var(--sentinel);
+    color: var(--preto);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    margin: 1rem 0;
+}
+p a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: inset 0 -2px 0 var(--cor1);
+}
+p a:hover {
+    box-shadow: inset 0 -4px 0 var(--cor1) !important;
+    transition: box-shadow 0.2s ease-in;
+}
+p a:visited {
+    box-shadow: inset 0 -2px 0 var(--cinza);
+}
+.abre {
+    overflow-x: hidden;
+	position: relative;
+	left: 0;
+	padding-bottom: 4rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(9, minmax(auto, 7.125rem)) 1fr;
+    column-gap : 1rem;
+}
+.serrapilheira {
+    grid-column: 4 / 10;
+    margin: 0rem 0 3rem;
+}
+.serrapilheira img {
+    grid-column: 2 / 5 !important;
+    width: 75%;
+}
+.serrapilheira p {
+    grid-column: 5 / 9;
+    font-family: "Gotham Rnd SSm", "Gotham Rounded SSm A", "Gotham Rounded SSm B", sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+}
+/*
+ESPECÍFICO
+SERRAPILHEIRA
+*/
+#marca {
+    grid-column: 4 / 7;
+    margin-top: 1rem;
+}
+#marca p {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#marca .gotham {
+    font-family: var(--gotham);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+#shape1 {
+    min-height: 100px;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% calc(100% - 37.5px), 100% 0);
+    background: var(--cor3);
+    grid-column: 1 / 12;
+    position: relative;
+    z-index: 3;
+}
+#shape2 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    background: var(--cor1);
+    position: relative;
+    top: -5rem;
+    z-index: 2;
+    padding-bottom: 5rem;
+    min-height: 550px;
+    padding-top: 4rem;
+}
+#shape3 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 0 calc(100% - 2rem), 100% 100%, 100% 0);
+    background: var(--cor2);
+    grid-column: 1 / 12;
+    position: relative;
+    top: -5rem;
+    z-index: 1;
+    padding-bottom: 10rem;
+    padding-top: 1rem;
+}
+#ilustra1 {
+    max-width: 528px;
+    position: absolute;
+    z-index: 3;
+    top: 125px;
+    width: 100%;
+    left: 50%;
+    animation: insulina 10s linear infinite;
+}
+@keyframes insulina {
+0% {
+transform: rotate(0) translateX(-50%);
+}
+25% {
+transform: rotate(4deg) translateX(-50%);
+}
+75% {
+transform: rotate(-4deg) translateX(-50%);
+}
+100% {
+transform: rotate(0) translateX(-50%);
+}
+}
+#ilustra2 {
+    max-width: 108px;
+    position: absolute;
+    z-index: 3;
+    top: 125px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#ilustra3 {
+    max-width: 86px;
+    position: absolute;
+    z-index: 3;
+    top: 1040px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.abre .titulo {
+    grid-column: 4 / 8;
+    font-family: var(--sentinel);
+    font-size: 2.75rem;
+    color: var(--branco);
+    margin-bottom: 0;
+}
+.abre #underline {
+    width: 100%;
+    max-width: 190px;
+    grid-column: 4 / 8;
+    margin-bottom: 1rem;
+}
+.abre .credito {
+    grid-column: 4 / 9;
+    margin: 0;
+    padding: 0;
+}
+.abre .data {
+    grid-column: 4 / 9;
+    margin: 0;
+    padding: 0;
+}
+.abre .linhafina {
+    grid-column: 5 / 8;
+    color: var(--branco);
+    font-size: 1.625rem;
+    font-weight: 300 !important;
+    line-height: 1.4;
+}
+
+/*
+MOBILE
+*/
+@media only screen and (max-width: 768px) {
+body {
+    overflow-x: hidden;
+}
+	.semiespecial {
+		overflow-x: hidden;
+	}
+.abre {
+}
+.abre-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: calc(50vh - 52.5px) calc(50vh - 52.5px);
+}
+.grid-container {
+    margin: 0 1rem;
+    max-width: none;
+}
+#shape1 {
+    min-height: inherit;
+    clip-path: polygon(0 0, 0 100%, 100% calc(100% - 25px), 100% 0);
+}
+#shape1 #marca {
+    grid-column: 2 / 12;
+    padding-bottom: 1rem;
+}
+#shape1 #marca p {
+    font-size: 0.875em !important;
+}
+#shape2 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    padding-bottom: 0;
+}
+#shape3 {
+	padding-bottom: 5rem;
+}
+.no-overflow {
+    overflow: hidden !important;
+	position: relative;
+	clear: both;
+}
+#ilustra1 {
+    width: 150%;
+    max-width: 600px;
+    left: 70%;
+    top: 75px;
+	transform: none;
+}
+#ilustra2 {
+    top: 0;
+    z-index: 2;
+    left: 70%;
+    max-width: 150px;
+}
+#ilustra3 {
+    max-width: 62px;
+	top: -150px;
+	position: relative;
+}
+.abre .titulo, .abre #underline, .abre .credito, .abre .data, .abre .linhafina {
+    grid-column: 2 / 11 !important;
+}
+.abre .credito, .abre .data {
+    font-size: 0.875rem;
+}
+.abre .linhafina {
+    font-size: 1.375rem;
+}
+.serrapilheira {
+    grid-column: 3 / 10 !important;
+    grid-row-gap: 1rem;
+}
+.serrapilheira img {
+    grid-column: 1 / 8 !important;
+    grid-row: 1 !important;
+}
+.serrapilheira p {
+    grid-column: 1 / 11 !important;
+    grid-row: 2 !important;
+    font-size: 0.75rem;
+}
+#g-insulina-v05-Mobile {
+    margin-top: -5rem;
+}
+}
+</style>
+
+<body>
+<div class="semiespecial">
+<div class="abre">
+  <div id="shape1">
+    <div class="grid">
+      <div id="marca">
+        <p class="gotham">a história ilustrada</p>
+        <p>de um Saber</p>
+      </div>
+    </div>
+  </div>
+  <div id="shape2"> </div>
+  <div id="ilustra1"> <img src="https://nexojornal.s3-sa-east-1.amazonaws.com/www/graficos-serrapilheira/1_insulina/Ativo+1.svg"> </div>
+  <div id="ilustra2"> <img src="https://nexojornal.s3-sa-east-1.amazonaws.com/www/graficos-serrapilheira/1_insulina/Ativo+2.svg"> </div>
+  <div id="shape3">
+    <div class="grid">
+      <p class="titulo">Insulina</p>
+      <img id="underline" src="https://nexojornal.s3-sa-east-1.amazonaws.com/www/graficos-serrapilheira/1_insulina/Ativo+4.svg">
+      <p class="credito">Por <b>Lucas Gomes</b>, <b>Alicia Kowaltowski</b> e <b>Gabriel Maia</b></p>
+      <p class="data">em 28 de outubro de 2020 </p>
+      <p class="linhafina">O percurso para produzir a insulina em laboratório foi longo e complexo. Hoje ela salva milhares de vidas pelo mundo</p>
+    </div>
+  </div>
+  <div id="ilustra3"> <img src="https://nexojornal.s3-sa-east-1.amazonaws.com/www/graficos-serrapilheira/1_insulina/Ativo+3.svg"> </div>
+</div>
+</div>
+</body>
+</html>
